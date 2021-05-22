@@ -1,0 +1,31 @@
+for mongodb connection:-
+
+mongoose.connect(url, {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: true});
+    const connection = mongoose.connection;
+
+    "mongodb+srv://Vardhan:ZdsA6OPWNo7qRZX8@cluster0.zkpky.mongodb.net/filetransferDB?retryWrites=true&w=majority&ssl=true"
+
+
+
+.env folder is made bcz we want to secure our url data(passwords)
+
+
+
+
+
+
+
+
+
+
+
+pw: Y3N8ukpUkL84rmzX
+pw: MGsierksK2A3FRyo
+pv:ZdsA6OPWNo7qRZX8
+
+
+
+  <meta http-equiv="Content-Security-Policy" content="default-src *;
+    img-src * 'self' data: https: http:;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+    style-src  'self' 'unsafe-inline' *">
