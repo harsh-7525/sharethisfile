@@ -3,13 +3,13 @@ const express= require('express');
 
 const favicon= require('serve-favicon');
 const createError= require('http-errors');
-const path=require('path');
-const cors = require('cors');
+const path=require('path')
 const app=express();
 
 
-const PORT = process.env.PORT || 3000;
 
+
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 //app.use(express.static('public'));  //tell express to use static things like ,logo and css
@@ -17,14 +17,8 @@ app.use(express.json());
 const connectDB = require('./config/db');
 connectDB();
 
-//cors
-const corsOptions = {
-    origin: process.env.ALLOWED_CLIENTS.split(',')
-}
-
 app.use(favicon(path.join(__dirname,'public', 'favicon.ico')));
 //template engine
-app.use(cors(corsOptions));
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine','ejs');
 app.engine('html', require('ejs').renderFile);
