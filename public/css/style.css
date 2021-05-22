@@ -25,7 +25,7 @@
     width: 150px;
   }
 section.download {
-    background: #fff;
+    background: var(--dark-pink);
     width: 430px;
     max-width: 90%;
     border-radius: 25px;
